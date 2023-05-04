@@ -13,6 +13,7 @@ public class Ejecutor {
         // se llama al método que calcula el valor de la factura
         fac.calcularValorFactura(); 
         
-        System.out.printf("%s\n", fac);
+        System.out.printf("%s\n", fac.toString());
+        //System.out.printf("%s\n", fac.());// los dos son lo mismo 
     }
 }

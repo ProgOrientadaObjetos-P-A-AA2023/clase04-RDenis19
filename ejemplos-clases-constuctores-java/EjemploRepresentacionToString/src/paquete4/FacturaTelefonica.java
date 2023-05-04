@@ -61,6 +61,7 @@ public class FacturaTelefonica {
         return valorFactura;
     }
 
+    /*
     @Override
     public String toString() {
         String cadena = String.format("Los datos de factura\n"
@@ -73,6 +74,18 @@ public class FacturaTelefonica {
                 obtenerValorMinuto(),
                 obtenerValorFactura());
         return cadena;
+    }*/
+    @Override
+    public String toString() {
+        String cadena = String.format("Los datos de factura\n"
+                + "Número de teléfono: %s\n"
+                + "Minutos mes: %.2f\n"
+                + "Valor minuto: %.2f\n"
+                + "valor factura: %.2f\n",
+                numeroTelefono,
+                minutosMes,
+                valorMinuto,
+                valorFactura);
+        return cadena;
     }
-
 }

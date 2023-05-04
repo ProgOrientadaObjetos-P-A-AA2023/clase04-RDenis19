@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete4;
+package paquete3;
 
-public class Ejecutor {
 
+public class Ejecutor2 {
     public static void main(String[] args) {
-        // Se crea un objeto haciendo referencia al constructor sin 
-        // argumentos
         FacturaTelefonica fac = new FacturaTelefonica();
-        // se llama al método que calcula el valor de la factura
-        fac.establecerValorMinuto(0);
-        fac.calcularValorFactura();
-
+        
+        fac.calcularValorFactura(); 
+        
+        System.out.printf("%s\n", fac);
+        
+        fac.establecerNumeroTelefono("498618566");
         System.out.printf("%s\n", fac);
     }
 }
