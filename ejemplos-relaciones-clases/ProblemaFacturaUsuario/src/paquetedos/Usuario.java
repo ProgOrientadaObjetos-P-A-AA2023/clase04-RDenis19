@@ -19,6 +19,7 @@ public class Usuario {
         nombre = "NN";
         apellido = "AA";
         identificacion = "00";
+        
     }
     
     public Usuario(String n, String ap, String ident){
