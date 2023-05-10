@@ -20,12 +20,15 @@ public class Ejecutor {
         
         System.out.printf("El barrio de la persona %s (%s) es: %s\n",
                 persona1.obtenerNombre(),
+                persona1.obtenerCedula(),
                 persona1.obtenerBarrio().obtenerNombre());
         
         persona1.establecerBarrio(barrio2);
-        
-        System.out.printf("El barrio de la persona %s (%s) es: %s\n",
+        persona1.establecerNombre("Rene Elizalde");
+        System.out.printf("El barrio de %s  es: %s\n",
                 persona1.obtenerNombre(),
+                
                 persona1.obtenerBarrio().obtenerNombre());
+                
     }
 }
